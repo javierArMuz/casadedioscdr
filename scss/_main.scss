@@ -1,0 +1,45 @@
+main {
+  margin-top: 66px;
+  text-align: center;
+  min-height: 100vh;
+  padding: 10px;
+
+  .identity {
+    margin: 20px 0 40px;
+    background: $bluIdentify;
+    padding: 1rem 0;
+
+    h1 {
+      margin-bottom: 30px;
+      text-transform: capitalize;
+    }
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  .page {
+    font-weight: 200;
+    font-size: smaller;
+    text-align: left;
+  }
+
+  .link__home {
+    font-weight: 200;
+  }
+
+  p {
+    font-size: .8rem;
+  }
+
+  .main__title {
+    margin: 50px 0;
+    color: wheat;
+  }
+
+  .main__subtitle {
+    margin: 30px;
+    color: wheat;
+  }
+}

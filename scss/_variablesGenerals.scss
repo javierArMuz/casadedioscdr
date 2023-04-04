@@ -1,0 +1,22 @@
+$white: #fff;
+$opaqueWhite: #EAECEE;
+$grey: rgba(73, 72, 72, 0.699);
+$black: #000000d8;
+$bluIdentify: #0a2cb6;
+$blueLink: #043186;
+$blueOscuro: #051760;
+$backgroundBody: radial-gradient(circle, $bluIdentify, #0c34d4, $blueLink);
+$opacityLinkMain: .9;
+
+// Mixins
+@mixin img($height: 100%, $width: 100%, $fit: cover) {
+  height: $height;
+  width: $width;
+  object-fit: $fit;
+}
+
+@mixin gridCol2() {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}

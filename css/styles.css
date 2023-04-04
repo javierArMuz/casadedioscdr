@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  min-width: 342px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle, #0a2cb6, #0c34d4, #043186);
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+.link__black, .message__container .comment .date, .welcome .about a {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8470588235);
+  padding: 6px 8px;
+}
+
+@keyframes backgHeader {
+  0% {
+    background: linear-gradient(to right, #EAECEE, #fff, #EAECEE);
+  }
+  100% {
+    background: linear-gradient(to right, #fff, #EAECEE, #fff);
+  }
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  animation: backgHeader 3s infinite alternate linear;
+}
+header .icon-text {
+  display: flex;
+  color: #051760;
+}
+header .icon-text img {
+  width: 2.6rem;
+  border-radius: 50%;
+}
+header .icon-text h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+header .navbar .navbar-toggler {
+  border-color: transparent;
+}
+header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .navbar-collapse {
+  flex-grow: 0;
+}
+header .navbar-collapse .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.9rem;
+  position: relative;
+}
+
+main {
+  margin-top: 66px;
+  text-align: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+main .identity {
+  margin: 20px 0 40px;
+  background: #0a2cb6;
+  padding: 1rem 0;
+}
+main .identity h1 {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+main img {
+  border-radius: 10px;
+}
+main .page {
+  font-weight: 200;
+  font-size: smaller;
+  text-align: left;
+}
+main .link__home {
+  font-weight: 200;
+}
+main p {
+  font-size: 0.8rem;
+}
+main .main__title {
+  margin: 50px 0;
+  color: wheat;
+}
+main .main__subtitle {
+  margin: 30px;
+  color: wheat;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  animation: backgHeader 3s infinite alternate linear;
+}
+footer .networks {
+  padding: 6px 0;
+}
+footer .networks i {
+  color: #043186;
+  transition: color 0.5s;
+}
+footer .networks a {
+  display: inline-block;
+  border: 2px solid #043186;
+  width: 35px;
+  height: 35px;
+  line-height: 2;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+footer .networks a:hover {
+  background: #043186;
+}
+footer .networks a:hover i {
+  color: #fff;
+}
+footer .line {
+  border: 1px solid rgba(73, 72, 72, 0.699);
+  margin: 6px 0;
+}
+footer p {
+  padding: 5px 0;
+  font-weight: 500;
+  color: rgba(73, 72, 72, 0.699);
+  margin-bottom: 0;
+}
+
+/* ============================== */
+/* === ESTILOS DE LAS PÂGINAS ===*/
+/* Página Index */
+.img__inicio {
+  margin: 20px 0;
+  width: 58%;
+  opacity: 0.9;
+  display: inline-block;
+}
+.img__inicio img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.welcome {
+  padding: 40px 0;
+  margin: 50px 0;
+  background: #0a2cb6;
+}
+.welcome .about {
+  margin: 10px;
+}
+.welcome .about a:hover {
+  opacity: 0.9;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.sections img {
+  height: 85%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.9;
+}
+.sections img:hover {
+  opacity: 1;
+}
+
+/* Página Eventos */
+.section__images {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+.section__images img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__images .imageA {
+  grid-column: 1/2;
+}
+
+/* Página Cantactos */
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact .container {
+  width: unset;
+}
+.contact .container .form-floating > label {
+  color: #000;
+}
+.contact .container .btn {
+  line-height: 2.8;
+}
+.contact .social__media {
+  margin-top: 40px;
+}
+.contact .social__media h3 {
+  margin-bottom: 20px;
+}
+.contact .social__media a:hover i {
+  box-shadow: 0 0 5px 10px #0a2cb6;
+}
+.contact .social__media i {
+  font-size: 30px;
+  color: #fff;
+  margin: 10px;
+}
+
+/* Página Mensaje */
+.message__container .image {
+  margin-bottom: 30px;
+}
+.message__container .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.message__container .quote p {
+  text-align: center;
+}
+.message__container p {
+  text-align: justify;
+}
+.message__container .comment {
+  font-size: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+.message__container .comment .date:hover {
+  opacity: 0.9;
+}
+
+/* Página Servicios */
+.services__container .image {
+  display: none;
+}
+
+/* Página Nosotros */
+.we .content {
+  margin: 40px auto;
+}
+.we .content p {
+  text-align: justify;
+}
+
+/* =================== */
+/* Media Query */
+@media (min-width: 768px) {
+  /* Main */
+  main p {
+    font-size: 1.3rem;
+  }
+  /* Index */
+  .index .sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Eventos */
+  .section__images {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 5rem;
+  }
+  .section__images .imageA {
+    grid-column: 1/span 2;
+  }
+  /* Nosotros */
+  .we .content {
+    width: 65%;
+  }
+}
+@media (min-width: 992px) {
+  .nav-item a::after {
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: radial-gradient(circle, #0a2cb6, #0c34d4, #043186);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-item a:hover::after, .nav-item a.active::after {
+    transform: scaleX(1);
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin: 0 0.5rem;
+    padding: unset;
+  }
+  /* Mensaje */
+  .message .image__quote {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  /* Index */
+  .index .img__inicio {
+    width: 50%;
+  }
+  /* Eventos */
+  .section__images {
+    padding: 3rem 8rem;
+  }
+  /* Servicios */
+  .services .services__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .services .services__container .image {
+    display: block;
+  }
+  .services .services__container .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,44 @@
+footer {
+  text-align: center;
+  padding: 8px;
+  animation: $backgroundHeader;
+
+  .networks {
+    padding: 6px 0;
+
+    i {
+      color: $blueLink;
+      transition: color .5s;
+    }
+
+    a {
+      display: inline-block;
+      border: 2px solid $blueLink;
+      width: 35px;
+      height: 35px;
+      line-height: 2;
+      border-radius: 50%;
+      margin-right: 8px;
+
+      &:hover {
+        background: $blueLink;
+      }
+
+      &:hover i {
+        color: $white;
+      }
+    }
+  }
+
+  .line {
+    border: 1px solid $grey;
+    margin: 6px 0;
+  }
+
+  p {
+    padding: 5px 0;
+    font-weight: 500;
+    color: $grey;
+    margin-bottom: 0;
+  }
+}
