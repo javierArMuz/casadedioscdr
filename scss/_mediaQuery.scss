@@ -1,8 +1,12 @@
 @media (min-width:768px) {
 
   /* Main */
-  main p {
-    font-size: 1.3rem;
+  main {
+    padding: 15px;
+
+    p {
+      font-size: 1.3rem;
+    }
   }
 
   /* Index */
@@ -60,6 +64,11 @@
 }
 
 @media (min-width:1024px) {
+
+  /* Main */
+  main {
+    padding: 20px;
+  }
 
   /* Index */
   .index .img__inicio {

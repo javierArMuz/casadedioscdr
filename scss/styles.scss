@@ -87,33 +87,38 @@
   display: flex;
   flex-direction: column;
 
-  .container {
-    width: unset;
+  .contact__container {
+    margin: auto;
 
-    .form-floating>label {
-      color: #000;
+
+    .container {
+      width: unset;
+
+      .form-floating>label {
+        color: #000;
+      }
+
+      .btn {
+        line-height: 2.8;
+      }
     }
 
-    .btn {
-      line-height: 2.8;
-    }
-  }
+    .social__media {
+      margin-top: 40px;
 
-  .social__media {
-    margin-top: 40px;
+      h3 {
+        margin-bottom: 20px;
+      }
 
-    h3 {
-      margin-bottom: 20px;
-    }
+      a:hover i {
+        box-shadow: 0 0 5px 10px $bluIdentify;
+      }
 
-    a:hover i {
-      box-shadow: 0 0 5px 10px $bluIdentify;
-    }
-
-    i {
-      font-size: 30px;
-      color: $white;
-      margin: 10px;
+      i {
+        font-size: 30px;
+        color: $white;
+        margin: 10px;
+      }
     }
   }
 }

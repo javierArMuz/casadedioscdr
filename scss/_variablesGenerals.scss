@@ -17,6 +17,7 @@ $opacityLinkMain: .9;
 
 @mixin gridCol2() {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
