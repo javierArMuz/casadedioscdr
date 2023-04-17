@@ -1,0 +1,159 @@
+/* === ESTILOS DE LAS PÂGINAS ===*/
+
+/* Página Index */
+.img__inicio {
+  margin: 20px 0;
+  width: 58%;
+  opacity: $opacityLinkMain;
+  display: inline-block;
+
+  img {
+    @include img;
+    border-radius: 50%;
+  }
+}
+
+.welcome {
+  padding: 40px 0;
+  margin: 50px 0;
+  background: $bluIdentify;
+
+  .about {
+    margin: 10px;
+
+    a {
+      @extend .link__black;
+
+      &:hover {
+        opacity: $opacityLinkMain;
+      }
+    }
+  }
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+
+  img {
+    @include img(85%);
+    opacity: $opacityLinkMain;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+
+/* Página Eventos */
+.section__images {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+
+  img {
+    @include img();
+  }
+
+  .imageA {
+    grid-column: 1/2;
+  }
+}
+
+
+/* Página Cantactos */
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  .contact__container {
+    margin: auto;
+
+
+    .container {
+      width: unset;
+
+      .form-floating>label {
+        color: #000;
+      }
+
+      .btn {
+        line-height: 2.8;
+      }
+    }
+
+    .social__media {
+      margin-top: 60px;
+
+      h3 {
+        margin-bottom: 20px;
+      }
+
+      a:hover i {
+        box-shadow: 0 0 0 10px $bluIdentify;
+        border-radius: 5px;
+      }
+
+      i {
+        font-size: 30px;
+        color: $white;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+
+/* Página Mensaje */
+.message__container {
+  .image {
+    margin-bottom: 30px;
+
+    img {
+      @include img();
+    }
+  }
+
+  .quote p {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .comment {
+    font-size: 10px;
+    margin: 20px 0;
+    text-align: center;
+
+    .date {
+      @extend .link__black;
+
+      &:hover {
+        opacity: $opacityLinkMain;
+      }
+    }
+  }
+}
+
+
+/* Página Servicios */
+.services__container {
+  .image {
+    display: none;
+  }
+}
+
+
+/* Página Nosotros */
+.we .content {
+  margin: 40px auto;
+
+  p {
+    text-align: justify;
+  }
+}

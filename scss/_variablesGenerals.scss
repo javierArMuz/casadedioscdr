@@ -21,3 +21,9 @@ $opacityLinkMain: .9;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+
+@mixin position($top: 0px, $transform: rotate(0deg), $position: absolute) {
+  position: $position;
+  top: $top;
+  transform: $transform;
+}
