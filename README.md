@@ -23,13 +23,17 @@ Para los estilos utilizamos el CDN de bootstrap:
 ```bash
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 ```
 
-Para los iconos usamos fontawesome: 
-`<script src="https://kit.fontawesome.com/9a6e0b0c60.js" crossorigin="anonymous"></script>`
+Para los iconos usamos fontawesome:
+
+```bash
+<script src="https://kit.fontawesome.com/9a6e0b0c60.js" crossorigin="anonymous"></script>
+```
 
 ## Autor
 
@@ -38,8 +42,8 @@ Para los iconos usamos fontawesome:
 
 ## Agradecimientos
 
- - [A Dios, sobre todo]
- - [Equipo Coderhouse]
- - [Profesor: Luciana Garro]
- - [Tutor: María Pedraza]
- - [Compañeros en general]
+ - A Dios, sobre todo
+ - Equipo Coderhouse
+ - Profesor: Luciana Garro
+ - Tutor: María Pedraza
+ - Compañeros en general
